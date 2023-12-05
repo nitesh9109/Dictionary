@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: white
+}
+
+body {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background-color: #168bda;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+header #titleBar {
+    color: var(--primary-color);
+    margin-top: 1rem;
+}
+
+header #searchSection {
+    margin: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2.5rem;
+}
+
+
+
+#searchSection input {
+    padding: 10px;
+    width: 500px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #212529;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: 0.17s ease-in-out;
+}
+
+button:hover {
+    background-color: rgba(20, 20, 20);
+}
+
+
+#mainSection {
+    background-color: #111111;
+    color: white;
+    max-height: 2000vh;
+}
+
+
+#meaning_Def {
+    padding: 15px;
+}
+
+#lists {
+    margin-left: 50px;
+}
+
+#lists ol li {
+    padding: 14px 0;
+    border-bottom: 1px solid #bbb;
+}
+
+#examples {
+    margin-left: 50px;
+    padding: 14px 0;
+}
+
+/* Style the audio player */
+audio {
+    width: 100%;
+    max-width: 400px;
+    margin: 10px 0;
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+/* Style the audio controls */
+audio::-webkit-media-controls-panel {
+    background-color: #168bda;
+    color: white;
+    border-radius: 5px;
+}
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-volume-slider {
+    color: #333;
+    border-radius: 3px;
+}
+
+#audio_container {
+    text-align: center;
+}
+
+#main_title {
+    text-align: center;
+    text-decoration: underline;
+}
+
+
+@media screen and (max-width: 768px) {
+    #searchSection {
+        flex-direction: column;
+    }
+
+
+    #searchSection input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+
+    button {
+        margin-left: 0;
+        /* Reset margin for the button */
+    }
+
+    #examples {
+        margin-left: 35px;
+        padding: 8px 0;
+        font-size: 16px;
+    }
+
+    #lists {
+        font-size: 16px;
+        padding: 0px;
+        margin-left: 35px;
+    }
+
+}
